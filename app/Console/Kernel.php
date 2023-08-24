@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('find:reminder')
         ->timezone('America/Caracas')
-        ->weeklyOn(1,'20:42');
+        ->weeklyOn(1,'20:17');
     }
 
     /**

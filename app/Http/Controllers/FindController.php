@@ -113,9 +113,20 @@ class FindController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request)
     {
-        //
+        unset($request['_token']);
+        $find = Find::where('id',$request->input("idEdit"))->first();
+        $find->name = $request->input('editName');
+        $find->code = $request->input('editCode');
+        $find->expiration_date = $request->input('editDate');
+        $find->save();
+
+        if($find){
+            return back()->with('success', 'Hallazgo actualizado satisfactoriamente.');
+        } else {
+            return back()->with('failed', 'Se presentó un inconveniente al realizar la modificación del Hallazgo.');
+        }
     }
 
     /**
@@ -138,6 +149,14 @@ class FindController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $find = Find::where('id',$id)->first();
+        $find->status = false;
+        $find->save();
+
+        if($find){
+            return back()->with('success', 'Hallazgo eliminado satisfactoriamente.');
+        } else {
+            return back()->with('failed', 'Se presentó un inconveniente al realizar la eliminación del Hallazgo.');
+        }
     }
 }

@@ -113,13 +113,13 @@
                         <!-- Dark table -->
                       <div class="row">
                         <div class="col">
-                          <div class="card bg-default shadow">
-                            <div class="card-header bg-transparent">
+                          <div class="card">
+                            <div class="card-header shadow" style="background:black">
                                 <div>
                                     <h4 class="text-left text-white mb-0 mt-0">HALLAZGOS ACTIVOS</h4>
                                 </div>
                             </div>
-                            <div class="table-responsive">
+                            <div class="table-responsive shadow">
                               <table class="table align-items-center table-dark table-flush">
                                 <thead class="thead-dark">
                                   <tr>
@@ -227,16 +227,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, voluptatum accusamus eligendi sapiente laudantium sed delectus, inventore iure consequuntur illum accusantium alias repudiandae ipsum incidunt numquam distinctio at ipsa. Deleniti.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis culpa consectetur iusto eveniet consequuntur dolor minus quos similique illum eligendi consequatur, quo beatae, sint rerum esse est reiciendis doloremque?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloremque impedit quidem debitis ipsam inventore veniam facere! Itaque, reprehenderit repellat nulla iusto ipsum, totam amet non hic molestias aperiam numquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta similique consectetur dolorem officia nisi porro omnis animi delectus possimus sint. Aperiam aspernatur perspiciatis illum hic quas maxime magni quibusdam consequuntur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ab ratione possimus eligendi reprehenderit tempore at atque numquam, ducimus sequi vero repudiandae veniam aliquam mollitia! Earum dolor odit molestias tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus similique nemo in earum tenetur autem id consectetur voluptatum at. Explicabo asperiores aliquam repellendus id sit soluta quidem eligendi error?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis qui incidunt dolores et aliquam? Aperiam delectus iusto iste dolorem ipsa odio. Consequatur laboriosam sit possimus itaque deleniti facere praesentium rerum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, corrupti magnam. Doloremque dicta tempore, earum, officiis rerum ad impedit iste quod officia soluta enim. Beatae quisquam excepturi iusto incidunt natus
     </div>
 @endsection
 @push('js')

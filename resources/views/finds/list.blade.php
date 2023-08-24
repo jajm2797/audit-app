@@ -182,17 +182,17 @@
         </div>
     </div>
 
-    <div class="container-fluid mt--7">
+    <div class="container-fluid mt--7 shadow">
         <!-- Dark table -->
       <div class="row">
         <div class="col">
-          <div class="card bg-default shadow">
-            <div class="card-header bg-transparent border-0">
+          <div class="card">
+            <div class="card-header shadow" style="background:black">
                 <div>
                     <h4 class="text-left text-white mb-0 mt-0">HALLAZGOS ACTIVOS</h4>
                 </div>
             </div>
-            <div class="table-responsive">
+            <div class="table-responsive shadow">
               <table class="table align-items-center table-dark table-flush">
                 <thead class="thead-dark">
                   <tr>
@@ -253,7 +253,8 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                             <a class="dropdown-item" href="#" onclick="editAuditoria({{$find}})">Editar Hallazgo</a>
-                            <a class="dropdown-item" href="{{url('/audits/delete/'.$find->id)}}">Solucionar Hallazgo</a>
+                            <a class="dropdown-item" href="{{url('/finds/delete/'.$find->id)}}">Borrar Hallazgo</a>
+                            <!--<a class="dropdown-item" href="{{url('/audits/delete/'.$find->id)}}">Solucionar Hallazgo</a>-->
                           </div>
                         </div>
                     </td>
@@ -265,7 +266,6 @@
           </div>
         </div>
       </div>
-        @include('layouts.footers.auth')
     </div>
 @endsection
 @push('js')

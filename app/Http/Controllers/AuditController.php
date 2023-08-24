@@ -92,7 +92,7 @@ class AuditController extends Controller
     {
 
         unset($request['_token']);
-        $audit = Audit::find($request->input("idEdit"));
+        $audit = Audit::where('id',$request->input("idEdit"))->first();
         $audit->name = $request->input('editName');
         $audit->code = $request->input('editCode');
         $audit->expiration_date = $request->input('editDate');
@@ -125,7 +125,7 @@ class AuditController extends Controller
      */
     public function destroy($id)
     {
-        $audit = Audit::find($id);
+        $audit = Audit::where('id',$id)->first();
         $audit->status = false;
         $audit->save();
 
